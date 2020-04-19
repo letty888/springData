@@ -1,5 +1,7 @@
 package com.itheima.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -20,7 +22,7 @@ public class Article {
 
     private String title;
 
-
+    @JsonIgnore
     @ManyToMany(mappedBy = "articles")
     private Set<Type> types = new HashSet<>(0);
 

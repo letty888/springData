@@ -15,7 +15,7 @@ public class Article {
 
 
     //建立从Article到ArticleData的一对一关系
-    @OneToOne(mappedBy = "article")
+    @OneToOne(mappedBy = "article",cascade = CascadeType.ALL)
     private ArticleData articleData;
 
 

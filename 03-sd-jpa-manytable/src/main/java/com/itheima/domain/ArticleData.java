@@ -1,5 +1,7 @@
 package com.itheima.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -17,6 +19,7 @@ public class ArticleData {
     //让这个实体维护关系
     //name                    当前表中的外键名
     //referencedColumnName    指向的对方表中的主键名
+    @JsonIgnore
     @OneToOne
     @JoinColumn(name = "articleId", referencedColumnName = "aid", unique = true)
     private Article article;

@@ -1,0 +1,36 @@
+# 这个是交由Spring管理的
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/case?useUnicode=true&serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+  jpa:
+    database: MySQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+  redis:
+    host: localhost
+    port: 6379
+  data:
+    mongodb:
+      host: 192.168.200.128    #mongo服务IP
+      port: 27017            #mongo服务端口号
+      database: case       #mongo数据库名
+    elasticsearch:
+      cluster-nodes: 192.168.200.128:9300
+
+server:
+  port: 8989
+
+
+
+
+
+

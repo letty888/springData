@@ -1,5 +1,7 @@
 package com.itheima.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.HashSet;
@@ -15,6 +17,7 @@ public class Type {
 
     private String name;
 
+    @JsonIgnore
     @ManyToMany
     @JoinTable(
             //代表中间表名称

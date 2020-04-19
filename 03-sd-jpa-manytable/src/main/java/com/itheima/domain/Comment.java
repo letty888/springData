@@ -1,5 +1,7 @@
 package com.itheima.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -13,7 +15,7 @@ public class Comment {
 
     private String comment;
 
-
+    @JsonIgnore
     @ManyToOne()
     @JoinColumn(name = "aid", referencedColumnName = "aid")
     private Article article;
