@@ -31,6 +31,8 @@
         <module>07-sd-mongodb</module>
         <module>08-case</module>
         <module>04-sd-springboot-redis</module>
+        <module>06-sd-springboot-es</module>
+        <module>08-springboot-case</module>
     </modules>
 
 </project>

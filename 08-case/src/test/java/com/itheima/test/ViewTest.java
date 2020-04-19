@@ -1,8 +1,7 @@
 package com.itheima.test;
 
 import com.itheima.domain.Article;
-import com.itheima.domain.ArticleData;
-import com.itheima.es.EsArticle;
+import com.itheima.es.domain.EsArticle;
 import com.itheima.mongo.Comment;
 import com.itheima.service.ArticleService;
 import com.itheima.service.CommentService;
@@ -12,9 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")

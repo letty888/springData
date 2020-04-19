@@ -1,7 +1,7 @@
 package com.itheima.service;
 
 import com.itheima.domain.Article;
-import com.itheima.es.EsArticle;
+import com.itheima.es.domain.EsArticle;
 
 import java.util.List;
 

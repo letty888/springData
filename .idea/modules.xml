@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/04-sd-springboot-redis/04-sd-springboot-redis.iml" filepath="$PROJECT_DIR$/04-sd-springboot-redis/04-sd-springboot-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/05-es-review/05-es-review.iml" filepath="$PROJECT_DIR$/05-es-review/05-es-review.iml" />
       <module fileurl="file://$PROJECT_DIR$/06-sd-es/06-sd-es.iml" filepath="$PROJECT_DIR$/06-sd-es/06-sd-es.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-sd-springboot-es/06-sd-springboot-es.iml" filepath="$PROJECT_DIR$/06-sd-springboot-es/06-sd-springboot-es.iml" />
       <module fileurl="file://$PROJECT_DIR$/07-sd-mongodb/07-sd-mongodb.iml" filepath="$PROJECT_DIR$/07-sd-mongodb/07-sd-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/08-case/08-case.iml" filepath="$PROJECT_DIR$/08-case/08-case.iml" />
       <module fileurl="file://$PROJECT_DIR$/springdata.iml" filepath="$PROJECT_DIR$/springdata.iml" />

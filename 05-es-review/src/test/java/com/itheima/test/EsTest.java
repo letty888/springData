@@ -33,7 +33,7 @@ public class EsTest {
             client = new PreBuiltTransportClient(Settings.EMPTY)
                     .addTransportAddress(
                             new InetSocketTransportAddress(
-                                    InetAddress.getByName("192.168.106.128"), 9300
+                                    InetAddress.getByName("192.168.200.128"), 9300
                             )
                     );
         } catch (UnknownHostException e) {
@@ -172,15 +172,14 @@ public class EsTest {
     }
 
 
-
     //根据title查询
     @Test
     public void testFindByTitle() {
 
-        //QueryBuilders.termQuery("属性","值[分词之后存在]")
+        //QueryBuilders.termQuery("属性","值[分词之后必须存在,不存在的话就查不出来]")
         //1 设置index type  查询条件,返回一个查询结果对象
         SearchResponse searchResponse = client.prepareSearch("heima").setTypes("article")//设置index和type,允许传入多个
-                .setQuery(QueryBuilders.termQuery("title","员"))//设置查询条件 :根据title查询
+                .setQuery(QueryBuilders.termQuery("title", "员"))//设置查询条件 :根据title查询
                 .get();
 
         //2 检索的命中对象
@@ -198,7 +197,6 @@ public class EsTest {
     }
 
 
-
     //分页和排序
     @Test
     public void testFindAllWithPageAndSort() {
@@ -207,7 +205,7 @@ public class EsTest {
         SearchResponse searchResponse = client.prepareSearch("heima").setTypes("article")//设置index和type,允许传入多个
                 .setQuery(QueryBuilders.matchAllQuery())//设置查询条件 :查询所有
                 .setFrom(0).setSize(20)//设置分页的条件 .setFrom(从第几行开始查).setSize(查多少行)
-                .addSort("hits", SortOrder.ASC)//设置分页条件 .addSort(属性, 排序规则)
+                .addSort("hits", SortOrder.ASC)//设置排序条件 .addSort(属性, 排序规则)
                 .get();
 
         //2 检索的命中对象
@@ -223,8 +221,6 @@ public class EsTest {
             System.out.println(searchHit.getSourceAsString());
         }
     }
-
-
 
 
 }

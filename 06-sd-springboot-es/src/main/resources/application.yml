@@ -1,0 +1,7 @@
+server:
+  port: 8888
+
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.200.128:9300

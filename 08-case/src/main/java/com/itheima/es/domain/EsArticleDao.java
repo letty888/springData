@@ -1,4 +1,4 @@
-package com.itheima.es;
+package com.itheima.es.domain;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;

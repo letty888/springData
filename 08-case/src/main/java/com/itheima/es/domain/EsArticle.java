@@ -1,4 +1,4 @@
-package com.itheima.es;
+package com.itheima.es.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
