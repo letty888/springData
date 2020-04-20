@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -21,8 +22,9 @@ import java.util.Date;
 @Getter
 @Setter
 @ToString
-public class Article {
+public class Article implements Serializable {
 
+    private static final long serialVersionUID = -6285131943605844031L;
     @Id
     private String id;
 

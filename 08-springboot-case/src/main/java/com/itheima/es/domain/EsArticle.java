@@ -8,6 +8,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -19,8 +20,9 @@ import java.util.Date;
 @Getter
 @Setter
 @ToString
-public class EsArticle {
+public class EsArticle implements Serializable {
 
+    private static final long serialVersionUID = -8229405995371345283L;
     @Id
     @Field(type = FieldType.Integer)
     private String id;

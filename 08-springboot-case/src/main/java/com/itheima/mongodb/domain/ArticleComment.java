@@ -6,6 +6,8 @@ import lombok.ToString;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.io.Serializable;
+
 /**
  * @author zhang
  * @version 1.0
@@ -15,8 +17,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 @ToString
-public class ArticleComment {
+public class ArticleComment implements Serializable {
 
+    private static final long serialVersionUID = -965418410303247540L;
     @Id
     private String id;
 
