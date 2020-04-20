@@ -29,7 +29,7 @@
         <!-- 注入数据源 -->
         <property name="dataSource" ref="dataSource" />
         <!-- 指定实体类所在的包 -->
-        <property name="packagesToScan" value="com.itheima.domain" />
+        <property name="packagesToScan" value="com.itheima.OneToMany.domain" />
         <!-- 指定jpa的实现提供者 -->
         <property name="persistenceProvider">
             <bean class="org.hibernate.jpa.HibernatePersistenceProvider" />
@@ -59,7 +59,7 @@
 
     <!-- 整合spring data jpa -->
     <!--spring 通过代理的方式为dao接口提供实现类，需要指明为哪些接口去产生代理类-->
-    <jpa:repositories base-package="com.itheima.dao"
+    <jpa:repositories base-package="com.itheima.OneToMany.dao"
                       transaction-manager-ref="transactionManager"
                       entity-manager-factory-ref="entityManagerFactory" />
 

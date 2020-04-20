@@ -34,6 +34,7 @@
         <module>06-sd-springboot-es</module>
         <module>08-springboot-case</module>
         <module>08-springboot-case</module>
+        <module>03-springboot-jpaDemo</module>
     </modules>
 
 </project>

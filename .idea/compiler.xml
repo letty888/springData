@@ -9,6 +9,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01-jpa-review" />
+        <module name="03-springboot-jpaDemo" />
         <module name="08-case" />
         <module name="07-sd-mongodb" />
         <module name="06-sd-springboot-es" />
@@ -25,6 +26,7 @@
       <module name="01-jpa-review" target="1.8" />
       <module name="02-sd-jpa-quickstart" target="1.8" />
       <module name="03-sd-jpa-manytable" target="1.8" />
+      <module name="03-springboot-jpaDemo" target="1.8" />
       <module name="04-sd-redis" target="1.8" />
       <module name="04-sd-springboot-redis" target="1.8" />
       <module name="05-es-review" target="1.8" />
@@ -41,6 +43,7 @@
       <module name="01-jpa-review" options="-parameters" />
       <module name="02-sd-jpa-quickstart" options="-parameters" />
       <module name="03-sd-jpa-manytable" options="-parameters" />
+      <module name="03-springboot-jpaDemo" options="-parameters" />
       <module name="04-sd-redis" options="-parameters" />
       <module name="04-sd-springboot-redis" options="-parameters" />
       <module name="05-es-review" options="-parameters" />

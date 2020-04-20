@@ -1,10 +1,8 @@
 package com.itheima.test;
 
 import com.itheima.dao.ArticleDao;
-import com.itheima.dao.CommentDao;
 import com.itheima.dao.TypeDao;
 import com.itheima.domain.Article;
-import com.itheima.domain.Comment;
 import com.itheima.domain.Type;
 import org.junit.Test;
 import org.junit.runner.RunWith;

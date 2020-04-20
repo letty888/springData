@@ -3,7 +3,6 @@ package com.itheima.test;
 import com.itheima.dao.ArticleDao;
 import com.itheima.dao.CommentDao;
 import com.itheima.domain.Article;
-import com.itheima.domain.ArticleData;
 import com.itheima.domain.Comment;
 import org.junit.Test;
 import org.junit.runner.RunWith;

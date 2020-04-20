@@ -17,7 +17,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!--指定实体类,此选项可省略-->
-        <class>com.itheima.domain.Article</class>
+        <class>Article</class>
 
         <properties>
             <!--跟数据库相关的信息 驱动 url 用户名 密码-->

@@ -1,7 +1,6 @@
 package com.itheima.domain;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.Date;
 
 @Entity

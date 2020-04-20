@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/01-jpa-review/01-jpa-review.iml" filepath="$PROJECT_DIR$/01-jpa-review/01-jpa-review.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-sd-jpa-quickstart/02-sd-jpa-quickstart.iml" filepath="$PROJECT_DIR$/02-sd-jpa-quickstart/02-sd-jpa-quickstart.iml" />
       <module fileurl="file://$PROJECT_DIR$/03-sd-jpa-manytable/03-sd-jpa-manytable.iml" filepath="$PROJECT_DIR$/03-sd-jpa-manytable/03-sd-jpa-manytable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-springboot-jpa/03-springboot-jpa.iml" filepath="$PROJECT_DIR$/03-springboot-jpa/03-springboot-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-springboot-jpaDemo/03-springboot-jpaDemo.iml" filepath="$PROJECT_DIR$/03-springboot-jpaDemo/03-springboot-jpaDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/04-sd-redis/04-sd-redis.iml" filepath="$PROJECT_DIR$/04-sd-redis/04-sd-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/04-sd-springboot-redis/04-sd-springboot-redis.iml" filepath="$PROJECT_DIR$/04-sd-springboot-redis/04-sd-springboot-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/05-es-review/05-es-review.iml" filepath="$PROJECT_DIR$/05-es-review/05-es-review.iml" />
