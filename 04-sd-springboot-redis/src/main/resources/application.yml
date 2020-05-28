@@ -2,6 +2,6 @@ server:
   port: 8989
 spring:
   redis:
-    host: localhost
+    host: 192.168.1.128
     port: 6379
 

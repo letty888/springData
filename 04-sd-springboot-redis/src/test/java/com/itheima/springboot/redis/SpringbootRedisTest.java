@@ -10,6 +10,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author zhang
@@ -48,5 +49,37 @@ public class SpringbootRedisTest {
         for (Map.Entry<String, User> stringUserEntry : map.entrySet()) {
             System.out.println(stringUserEntry.getKey() + ":" + stringUserEntry.getValue());
         }
+    }
+
+
+    @Test
+    public void testHashPuT() {
+        List<String> list = new ArrayList<>();
+        list.add("123");
+        list.add("456");
+        list.add("789");
+        redisTemplate.boundHashOps("cart_zhang").put("1", list);
+
+    }
+
+    @Test
+    public void testHasKey() {
+
+        List list = redisTemplate.boundHashOps("cart_heima").values();
+        Map map = redisTemplate.boundHashOps("cart_heima").entries();
+        map.forEach((k, v) -> System.out.println(k + "======" + v));
+        System.out.println(list);
+    }
+
+    /**
+     * redis中没有对应的可以的时候,直接操作这个可以,看看会有什么变化
+     */
+    @Test
+    public void testNoKeyOperator() {
+
+        String redis_key = "seckill_user_" + "zhangwuji" + "_id_" + "888";
+        Long count = redisTemplate.boundValueOps(redis_key).increment(1);
+
+        System.out.println(count);
     }
 }
